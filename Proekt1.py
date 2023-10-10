@@ -15,9 +15,27 @@ def f(a,b,x):
     r = 2 * s / p
     R = a*b*c / 4 * s
     return [c, s, p, r, R]
-a = int(input('a >>> '))
-b = int(input('b >>> '))
-x = int(input('x >>> '))
+j = False
+while j== False:
+    a = int(input('Первая сторона >>> '))
+    if a < 0:
+        print('Ошибка!!! Длина не может быть отрицательной!')
+    else:
+        j = True
+j = False
+while j== False:
+    b = int(input('Вторая сторона >>> '))
+    if b < 0:
+        print('Ошибка!!! Длина не может быть отрицательной!')
+    else:
+        j = True
+j = False
+while j== False:
+    x = int(input('Угол >>> '))
+    if x < 0:
+        print('Ошибка!!! Угол не может быть отрицательным!')
+    else:
+        j = True
 ar = f(a,b,x)
 print(' Третья сторона >>> %.2f \n Площадь треугольника >>> %.2f \n Периметр треугольника >>> %.2f \n Радиус вписанной окружности >>> %.2f \n Радиус описанной окружности >>> %.2f' %(ar[0],ar[1],ar[2],ar[3],ar[4]))
     
