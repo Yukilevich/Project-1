@@ -13,7 +13,7 @@ def f(a,b,x):
     s = 0.5 * a * b * math.sin(x) # Ищем площадь треугольника
     p = a + b + c # Ищем периметр треугольника
     r = 2 * s / p
-    R = a*b*c / 4 * s
+    R = a*b*c / (4 * s)
     return [c, s, p, r, R]
 j = False
 while j== False:
